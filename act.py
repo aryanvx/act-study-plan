@@ -3,75 +3,38 @@ from datetime import datetime, timedelta
 
 c = Calendar()
 
-def add_event(date_str, title):
-    e = Event()
-    e.name = title
-    e.begin = date_str
-    e.make_all_day()
-    c.events.add(e)
-
-start_date = datetime(2025, 9, 23)
-end_date = datetime(2025, 10, 14)
-total_days = (end_date - start_date).days + 1
-
-subjects = {
-    'Math': [
-        (12, 7, 36), (13, 13, 47), (14, 3, 31), (15, 4, 25), (16, 7, 31),
-        (17, 16, 51), (18, 3, 25), (19, 7, 26), (20, 4, 20), (21, 5, 35),
-        (22, 7, 38), (23, 5, 32), (24, 4, 17), (25, 8, 30), (26, 1, 32),
-        (27, 3, 24), (28, 6, 14), (29, 4, 25), (30, 1, 18), (31, 3, 18),
-        (32, 4, 16), (33, 4, 14), (34, 7, 19), (35, 12, 37)
-    ],
-    'English': [
-        (4, 6, 23), (5, 6, 23), (6, 4, 20), (7, 2, 18), (8, 6, 12),
-        (9, 2, 40), (10, 3, 13), (11, 1, 10), (12, 2, 10), (13, 1, 20),
-        (14, 4, 10), (15, 1, 8)
-    ],
-    'Reading': [
-        (5, 4, 20), (6, 9, 25), (7, 3, 15), (8, 8, 10), (9, 1, 11),
-        (10, 2, 12), (11, 9, 30), (12, 1, 10), (13, 9, 80)
-    ],
-    'Science': [
-        (5, 4, 20), (6, 4, 20), (7, 2, 10), (8, 1, 8), (9, 2, 10),
-        (10, 1, 6), (11, 1, 5), (12, 7, 30), (13, 2, 10)
-    ]
+schedule = {
+    "2025-09-24": ["Math Ch.12", "English Ch.4"],
+    "2025-09-25": ["Math Ch.13", "Reading Ch.6"],
+    "2025-09-26": ["Math Ch.14", "English Ch.5"],
+    "2025-09-27": ["Math Ch.15", "Math Ch.16", "Reading Ch.7"],
+    "2025-09-28": ["Math Ch.17", "Math Ch.18", "English Ch.6", "Reading Ch.8"],
+    "2025-09-29": ["Math Ch.19", "English Ch.7"],
+    "2025-09-30": ["Math Ch.20", "Reading Ch.9"],
+    "2025-10-01": ["Math Ch.21", "English Ch.8"],
+    "2025-10-02": ["Math Ch.22", "Reading Ch.10"],
+    "2025-10-03": ["Math Ch.23", "English Ch.9"],
+    "2025-10-04": ["Math Ch.24", "Math Ch.25", "Reading Ch.11"],
+    "2025-10-05": ["Math Ch.26", "Math Ch.27", "English Ch.10", "Reading Ch.12"],
+    "2025-10-06": ["Math Ch.28", "English Ch.11"],
+    "2025-10-07": ["Math Ch.29", "Reading Ch.13"],
+    "2025-10-08": ["Math Ch.30", "English Ch.12"],
+    "2025-10-09": ["Math Ch.31", "Science Ch.7"],
+    "2025-10-10": ["Math Ch.32", "Science Ch.8"],
+    "2025-10-11": ["Math Ch.33", "English Ch.13", "Science Ch.9"],
+    "2025-10-12": ["Math Ch.34", "Reading Ch.14", "Science Ch.10", "Science Ch.11"],
+    "2025-10-13": ["Math Ch.35", "Science Ch.12"],
+    "2025-10-14": ["English Ch.14", "English Ch.15", "Science Ch.13"]
 }
 
-def build_schedule(chapters, total_days):
-    tasks = []
-    for ch_num, lec, ques in chapters:
-        for i in range(lec):
-            tasks.append((ch_num, 1, 0))
-        for j in range(ques):
-            tasks.append((ch_num, 0, 1))
-    per_day = len(tasks) / total_days
-    schedule = [[] for _ in range(total_days)]
-    day_idx = 0
-    balance = 0
-    for task in tasks:
-        schedule[day_idx].append(task)
-        balance += 1
-        if balance >= per_day and day_idx < total_days - 1:
-            day_idx += 1
-            balance = 0
-    return schedule
+for date_str, chapters in schedule.items():
+    date = datetime.strptime(date_str, "%Y-%m-%d")
+    for chapter in chapters:
+        e = Event()
+        e.name = chapter
+        e.begin = date
+        e.make_all_day()
+        c.events.add(e)
 
-subject_daily = {sub: build_schedule(data, total_days) for sub, data in subjects.items()}
-
-for day_offset in range(total_days):
-    date_str = (start_date + timedelta(days=day_offset)).strftime('%Y-%m-%d')
-    for sub in subjects.keys():
-        entries = subject_daily[sub][day_offset]
-        if entries:
-            titles = []
-            for ch, lec, ques in entries:
-                if lec:
-                    titles.append(f"{sub} Ch.{ch} ({lec} lecture)")
-                if ques:
-                    titles.append(f"{sub} Ch.{ch} ({ques} question)")
-            add_event(date_str, "; ".join(titles))
-
-with open('ACT_Study_Schedule_Final.ics', 'w') as f:
+with open("ACT_Study_Schedule.ics", "w") as f:
     f.writelines(c)
-
-print("ACT study schedule .ics file generated: ACT_Study_Schedule_Final.ics")
