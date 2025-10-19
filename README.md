@@ -7,19 +7,17 @@ A Python-built framework that generates a personalized ACT study calendar tailor
 
 It exports an .ics file you can import into Google Calendar, Apple Calendar, or Outlook. Because good routines belong where your time lives.
 
-I built this while preparing for the October 2025 ACT. I was tired of generic prep plans that were more chaos than structure. So I wrote my own—something that didn’t just tell me what to do, but when to do it.
+I built this while preparing for the October 2025 ACT. I was tired of generic prep plans that were more chaos than structure. So I wrote my own. Something that didn’t just tell me what to do, but when to do it.
 
 This project sits at the intersection of computer science and discipline engineering, turning stress into system and randomness into rhythm.
 
 Interactive setup: input your start date, study duration, and subjects
 
-Daily tasks distributed evenly across English, Math, Reading, and Science
+Daily tasks are distributed evenly across English, Math, Reading, and Science
 
 Exports directly to .ics for seamless calendar integration
 
-Minimal, readable, and easy to modify
-
-## Example Output
+### Example Output
 The output is a .ics file such as ACT_Study_Schedule_2025-10-25.ics.
 
 Each day has a clear target:
@@ -41,9 +39,9 @@ Full-stack expansion using Flask or React
 
 Author
 
-Aryan Vyahalkar
-Student-athlete and builder.
-Exploring how code, structure, and willpower combine to create consistent performance.
+> Aryan Vyahalkar
+> Student-athlete and builder.
+> Exploring how code, structure, and willpower combine to create consistent performance.
 
 Contribute
 
