@@ -44,3 +44,4 @@ Full-stack expansion using Flask or React
 
 Fork it. Break it. Improve it.
 Every iteration expands the surface area. And if luck is a function of that, then let’s get lucky.
+https://arnavchauhan.com/blog/luck#hi
