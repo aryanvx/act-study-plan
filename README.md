@@ -2,10 +2,10 @@
 
 Discipline is the one algorithm you can’t fake.
 
-This isn’t just a script. It’s a system.
+Calling it a script would be to patronize it. I'd go with system.
 A Python-built framework that generates a personalized ACT study calendar tailored to your start date, duration, and subjects.
 
-It exports an .ics file you can import into Google Calendar, Apple Calendar, or Outlook. Because good routines belong where your time lives.
+It exports an .ics file you can import into Google Calendar, Apple Calendar, or Outlook.
 
 I built this while preparing for the October 2025 ACT. I was tired of generic prep plans that were more chaos than structure. So I wrote my own. Something that didn’t just tell me what to do, but when to do it.
 
