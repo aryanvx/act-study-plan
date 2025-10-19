@@ -1,8 +1,5 @@
 # ACT Study Schedule Generator
 
-### A Python-powered way to plan your ACT prep (designed by a student, for students).
-
-## Overview
 This project is a simple yet powerful Python script that automatically generates a personalized ACT study calendar based on your start date, duration, and subjects. It exports an `.ics` calendar file that you can import into Google Calendar/Apple Calendar/Outlook.
 
 I built this as part of my journey preparing for the **October 2025 ACT**, instead of relying on generic study plans, I wanted something that adapted to *my* schedule and priorities.  
