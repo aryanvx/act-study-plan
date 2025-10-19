@@ -21,11 +21,11 @@ Exports directly to .ics for seamless calendar integration
 The output is a .ics file such as ACT_Study_Schedule_2025-10-25.ics.
 
 Each day has a clear target:
-
+```
 Day 1: ACT Prep - English Practice + Review  
 Day 2: ACT Prep - Math Practice + Review  
 Day 3: ACT Prep - Reading Practice + Review  
-
+```
 
 Until routine becomes reflex.
 
