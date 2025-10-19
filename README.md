@@ -1,4 +1,4 @@
-ACT Study Schedule Generator
+# ACT Study Schedule Generator
 
 Discipline is the one algorithm you can’t fake.
 
@@ -29,7 +29,7 @@ Day 3: ACT Prep - Reading Practice + Review
 
 Until routine becomes reflex.
 
-Future Enhancements
+### Future Enhancements
 
 Difficulty-weighted scheduling
 
@@ -37,13 +37,10 @@ Built-in performance tracking and test reminders
 
 Full-stack expansion using Flask or React
 
-Author
-
+### Author
 > Aryan Vyahalkar
 > Student-athlete and builder.
 > Exploring how code, structure, and willpower combine to create consistent performance.
-
-Contribute
 
 Fork it. Break it. Improve it.
 Every iteration expands the surface area. And if luck is a function of that, then let’s get lucky.
