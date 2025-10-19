@@ -1,4 +1,4 @@
-# ACT Study Schedule Generator 🧠
+# ACT Study Schedule Generator
 
 ### A Python-powered way to plan your ACT prep (designed by a student, for students).
 
