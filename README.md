@@ -12,12 +12,12 @@ This project combines my interest in **computer science** with **academic perfor
 ## Features
 - Interactive setup (enter your start date, study duration, and subjects)
 - Generates daily study tasks evenly distributed across subjects
-- Exports a `.ics` calendar for easy syncing with your preferred calendar app
+- Exports an `.ics` calendar for easy syncing with your preferred calendar app
 - Fully commented, readable, and easy to modify
 
 
 ## Example output
-You’ll get a `.ics` file (ex: `ACT_Study_Schedule_2025-10-25.ics`) that contains a structured day-by-day plan:
+You’ll get an `.ics` file (ex: `ACT_Study_Schedule_2025-10-25.ics`) that contains a structured day-by-day plan:
 - `Day 1: ACT Prep: English Practice + Review`
 - `Day 2: ACT Prep: Math Practice + Review`
 - `Day 3: ACT Prep: Reading Practice + Review`
