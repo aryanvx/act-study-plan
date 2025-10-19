@@ -1,36 +1,51 @@
-# ACT Study Schedule Generator
+ACT Study Schedule Generator
 
-This project is a simple yet powerful Python script that automatically generates a personalized ACT study calendar based on your start date, duration, and subjects. It exports an `.ics` calendar file that you can import into Google Calendar/Apple Calendar/Outlook.
+Discipline is the one algorithm you can’t fake.
 
-I built this as part of my journey preparing for the **October 2025 ACT**, instead of relying on generic study plans, I wanted something that adapted to *my* schedule and priorities.  
+This isn’t just a script. It’s a system.
+A Python-built framework that generates a personalized ACT study calendar tailored to your start date, duration, and subjects.
 
-This project combines my interest in **computer science** with **academic performance optimization**, turning a stressful process into a structured one (really kicking it w/ the buzzwords on this.)
+It exports an .ics file you can import into Google Calendar, Apple Calendar, or Outlook. Because good routines belong where your time lives.
 
-## Features
-- Interactive setup (enter your start date, study duration, and subjects)
-- Generates daily study tasks evenly distributed across subjects
-- Exports an `.ics` calendar for easy syncing with your preferred calendar app
-- Fully commented, readable, and easy to modify
+I built this while preparing for the October 2025 ACT. I was tired of generic prep plans that were more chaos than structure. So I wrote my own—something that didn’t just tell me what to do, but when to do it.
 
+This project sits at the intersection of computer science and discipline engineering, turning stress into system and randomness into rhythm.
 
-## Example output
-You’ll get an `.ics` file (ex: `ACT_Study_Schedule_2025-10-25.ics`) that contains a structured day-by-day plan:
-- `Day 1: ACT Prep: English Practice + Review`
-- `Day 2: ACT Prep: Math Practice + Review`
-- `Day 3: ACT Prep: Reading Practice + Review`
-- …and so on.
+Interactive setup: input your start date, study duration, and subjects
 
+Daily tasks distributed evenly across English, Math, Reading, and Science
 
-## Future enhancements
-- Add difficulty-based weighting for subjects
-- Integrate score tracking or practice test reminders
-- Build a web app version using Flask or React
+Exports directly to .ics for seamless calendar integration
 
+Minimal, readable, and easy to modify
 
-## Author: Aryan Vyahalkar
-High school student-athlete and aspiring computer scientist  
-Exploring how technology can enhance academic performance and self-discipline.
+# Example Output
+The output is a .ics file such as ACT_Study_Schedule_2025-10-25.ics.
+
+Each day has a clear target:
+
+Day 1: ACT Prep — English Practice + Review  
+Day 2: ACT Prep — Math Practice + Review  
+Day 3: ACT Prep — Reading Practice + Review  
 
 
-## Contribute
-Feel free to fork, star, or open issues if you’d like to add features or collaborate.
+Until routine becomes reflex.
+
+Future Enhancements
+
+Difficulty-weighted scheduling
+
+Built-in performance tracking and test reminders
+
+Full-stack expansion using Flask or React
+
+Author
+
+Aryan Vyahalkar
+Student-athlete and builder.
+Exploring how code, structure, and willpower combine to create consistent performance.
+
+Contribute
+
+Fork it. Break it. Improve it.
+Every iteration expands the surface area. And if luck is a function of that, then let’s get lucky.
