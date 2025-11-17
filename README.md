@@ -1,8 +1,5 @@
 # ACT Study Schedule Generator
 
-Discipline is the one algorithm you can’t fake.
-
-Calling it a script would be to patronize it. I'd go with system.
 A Python-built framework that generates a personalized ACT study calendar tailored to your start date, duration, and subjects.
 
 It exports an .ics file you can import into Google Calendar, Apple Calendar, or Outlook.
@@ -35,13 +32,10 @@ Difficulty-weighted scheduling
 
 Built-in performance tracking and test reminders
 
-Full-stack expansion using Flask or React
-
 ### Author
 > Aryan Vyahalkar
 > Student-athlete and builder.
 > Exploring how code, structure, and willpower combine to create consistent performance.
 
-Fork it. Break it. Improve it.
 Every iteration expands the surface area. And if luck is a function of that, then let’s get lucky.
 https://arnavchauhan.com/blog/luck#hi
